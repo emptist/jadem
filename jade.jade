@@ -1,10 +1,12 @@
-head
-  title jade
 
 body
-  +hello
+	+hello
 
 template(name="hello") 
-  h1 Hello World!
-  #{greeting}
-  input(type="button" value="Click") 
+	//include head
+	h1 Hello Jade!
+	p= greeting
+	include something
+	
+
+
