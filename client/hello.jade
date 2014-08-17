@@ -1,2 +1,8 @@
-template(name='hello')
-	h1 hello world!	#{greeting}
+template(name='hello') 
+	h1 hello world!
+	//-this doesnt work	
+	+ifEven aValue  
+		| #{greeting}
+	else
+		| #{aValue} is odd
+

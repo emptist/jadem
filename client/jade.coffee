@@ -1,5 +1,7 @@
-Template.hello.greeting = ->
-	return "Welcome to jade."
+Template.hello.helpers
+	greeting: ->
+		"Welcome to jade."
+	aValue: -> Template.hello.greeting().length
 
 Template.hello.events
 	'click input': ->
